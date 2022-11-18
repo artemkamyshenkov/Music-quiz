@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <title>Music Quiz</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="logo header__logo">
+            <div class="logo__text">
+              <a href="../index.html" class="logo__link">Music Quiz</a>
+              <a href="../index.html" class="logo__link logo__link_mobile">MQ</a>
+            </div>
+            <img src="../assets/logo.png" alt="Logo" class="logo__img" />
+          </div>
+          <ul class="menu header__menu">
+            <li class="menu__item">
+              <a class="menu__link" href="../index.html"
+                >Начальная страница</a
+              >
+            </li>
+            <div class="score">СЧЕТ:</div>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="music-list">
+            <ul class="music-list__items">
+              <li class="music-list__item" data-item="0">
+                Хип-хоп 90-х
+              </li>
+              <li class="music-list__item" data-item="1">Популярное 00-х</li>
+              <li class="music-list__item" data-item="2">Чарты 2010</li>
+              <li class="music-list__item" data-item="3">Классическая</li>
+              <li class="music-list__item" data-item="4">Популярное современное</li>
+              <li class="music-list__item" data-item="5">YouTube чарт</li>
+            </ul>
+          </section>
+          <section class="current-music">
+            <div class="current-music__container">
+              <div class="current-music__ava">
+                <img
+                  src="./assets/img/ava-micro.jpg"
+                  alt="Microphone"
+                  class="current-music__ava_img"
+                />
+              </div>
+              <div class="music-player music-player__container">
+                 <!-- Список треков для выбора ответа -->
+                <div class="music-player__title">*****</div>
+                <div class="music-player__controls">
+                  <div class="music-player__button">
+                    <audio class="music-player__audio" src="./assets/audio/Coolio.mp3"></audio>
+                    <button class="music-player__player-icon"></button>
+                  </div>
+                  <div
+                    class="music-player__progress-container"
+                  >
+                    <div class="music-player__progress-line"></div>
+                  </div>
+                </div>
+                <div class="music-player__setting-container">
+                  <div class="music-player__time-container">
+                    <span class="music-player__audio-time">00:00 / </span>
+                    <span class="music-player__audio-duration">00:00</span>
+                  </div>
+                  <div class="music-player__volume-container">
+                    <img class="music-player__volume-down" src="./assets/img/volume-off.png"></img>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      class="volume-slider"
+                    />
+                    <img class="music-player__volume-up" src="./assets/img/volume-on.png"></img>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="choise-music">
+            <div class="choise-music__container">
+              <ul class="choise-music__list">
+                 <!-- Список треков для выбора ответа -->
+              </ul>
+              <div class="description">
+                <div class="container">
+                  <div class="description__text">Прослушайте песню и выберите вариант ответа. После того, как будет выбран правильный вариант, вы сможете полистать другие песни и почитать информацию о них. Удачи!</div>
+                  <div class="description__images">
+                    <img src="./assets/img/2pac-small.png" alt="Rapper" class="description__img">
+                    <img src="./assets/img/snoop-small.png" alt="Rapper" class="description__img">
+                    <img src="./assets/img/loonie-small.png" alt="Rapper" class="description__img">
+                  </div>
+                </div>
+               
+              </div>
+             
+              
+              <div class="choise-music__about music-about">
+                <div class="music-about__container">
+                  <div class="music-about__ava">
+                    <img src="./assets/img/ava-micro.jpg" alt="Microphone" class="music-about__ava_img">
+                  </div>
+                  <div class="music-about-player__container">
+                    <div class="music-about__nick"></div>
+                    <div class="music-about__name"></div>
+                    <div class="music-about__title"></div>
+                  </div>
+                </div>
+                <div class="music-player__controls music-about-player__controls">
+                  <div class="music-player__button music-about-player__button">
+                    <audio  class="music-about-player__audio"></audio>
+                    <button class="music-about-player__icon"></button>
+                  </div>
+                  <div
+                    class="music-about__progress-container"
+                  >
+                    <div class="music-about__progress-line"></div>
+                  </div>
+                  
+                </div>
+                <div class="music-about__setting-container">
+                  <div class="music-about__time-container">
+                    <span class="music-about__audio-time">00:00 / </span>
+                    <span class="music-about__audio-duration">00:00</span>
+                  </div>
+                  <div class="music-player__volume-container">
+                    <img class="music-player__volume-down" src="./assets/img/volume-off.png"></img>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                      class="music-about__volume-slider"
+                    />
+                    <img class="music-player__volume-up" src="./assets/img/volume-on.png"></img>
+                  </div>
+                </div>
+               
+               <div class="music-about__description"></div>
+              </div>
+            </div>
+          </section>
+          <button  disabled class="btn btn-next">Следующий уровень</button>
+          <a class="link-result" href="../result/index.html"><button  disabled class="btn btn-result">Результаты викторины</button></a> 
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <div class="item__img">
+                  <img src="../assets/Developer.png" alt="developer" /></div>
+              <a class="developer-contact" target="_blank" href="https://github.com/artemkamyshenkov"
+                >Артем Камышенков</a>
+            </li>
+            <li class="social-list__item">
+              <a
+                target="_blank"
+                class="social__icon"
+                href="https://rs.school/js/"
+                ><div class="item__img item__img_rs-school">
+                  <img src="../assets/rs-logo.png" alt="Github" /></div
+              ></a>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <audio src="./assets/audio/right answer.mp3" class="rigth-answer"></audio>
+    <audio src="./assets/audio/wrong-anwer.mp3" class="wrong-answer"></audio>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

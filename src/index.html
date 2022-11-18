@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <title>Music quiz</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <div class="logo header__logo">
+            <div class="logo__text">
+              <a href="#" class="logo__link">Music Quiz</a>
+              <a href="#" class="logo__link logo__link_mobile">MQ</a>
+            </div>
+            <img src="./assets/logo.png" alt="" class="logo__img" />
+          </div>
+          <div class="header-menu__container">
+            <ul class="menu header__menu">
+              <li class="menu__item">
+                <a class="menu__link menu__link_greeting link_active" href="./index.html">Начальная страница</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link_gallery" href="#">Зал славы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link_start" href="./quiz/index.html">Старт</a>
+              </li>
+            </ul>
+            <div class="select-lang">
+              <button class="btn-lang lang-ru">ru</button>
+              <button class="btn-lang lang-en">en</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="full-screen">
+          <video loop  muted autoplay preload="auto" class="full-screen__video">
+            <source type="video/webm" src="./assets/video.webm" />
+          </video>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                target="_blank"
+                class="social__icon"
+                href="https://github.com/artemkamyshenkov"
+                ><div class="item__img">
+                  <img src="./assets/Developer.png" alt="developer" /></div
+              ></a>
+              <a class="developer" target="_blank" href="https://github.com/artemkamyshenkov"
+                >Артем Камышенков</a
+              >
+            </li>
+            <li class="social-list__item">
+              <a
+                target="_blank"
+                class="social__icon"
+                href="https://rs.school/js/"
+                ><div class="item__img item__img_rs-school">
+                  <img src="./assets/rs-logo.png" alt="Github" /></div
+              ></a>
+            </li>
+
+            <li class="social-list__item">2022<sup>©</sup></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
