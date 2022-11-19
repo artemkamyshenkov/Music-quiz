@@ -1,4 +1,3 @@
-import selfAssessment from "./self-assessment.js"; //Самооценка
 import songDataRu from "./songRu.js";
 import songDataEn from "./songEn.js";
 
