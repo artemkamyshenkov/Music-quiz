@@ -187,6 +187,7 @@ function clearHTML() {
   durationTimePlayerTop.textContent = "";
   5;
   btnNext.setAttribute("disabled", "disabled");
+  bntResult.setAttribute("disabled", "disabled");
   indexSong = getRandomNum(0, 5);
 }
 
@@ -511,7 +512,6 @@ function nextQuestion() {
   }
   if (questionIndex === songDataRu.length - 1) {
     btnNext.style.display = "none";
-    bntResult.removeAttribute("disabled");
     bntResult.style.display = "block";
   }
 }
